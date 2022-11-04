@@ -23,7 +23,7 @@ let getWeather = () => {
 
         //If city name is valid
         .then((data) => {
-          console.log(data);
+          // console.log(data);
           const cityName = data.name;
           const mainTemp = data.main.temp.toFixed();
           const minTemp = data.main.temp_min.toFixed();

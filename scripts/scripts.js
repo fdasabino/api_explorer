@@ -57,5 +57,8 @@ let getWeather = () => {
     }
   }
 };
-searchBtn.addEventListener("keydown", getWeather);
+searchBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  getWeather();
+});
 window.addEventListener("load", getWeather);
